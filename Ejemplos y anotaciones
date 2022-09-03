@@ -1,0 +1,23 @@
+position static= posicion donde le toque a la caja
+position relative= donde me toque pero se mueve segun la indicacion:
+top, bottom, left, right, fixed, sticky
+¿en base a que se posiciona ?
+en base al padre
+
+display:
+none:
+    no genera la caga
+    no afecta layout
+    no es visible
+    no es accesible a lecctores de pantalla
+    no sera accesible, click, focus
+
+hidden: 
+
+<style>
+        table{border: 2px solid blue color silver;}
+        td:active {background-color:blue;color: white;}
+        tbody>tr:nth-of-type(odd){background-color: lightgray;}
+        thead>tr{background-color: blue;color: white;} 
+        tbody>tr:hover{background-color:  white;}
+    </style>
