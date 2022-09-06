@@ -76,7 +76,7 @@ tr
 
 .bandera
 {
-    width: 60px;
+    width: 200px;
 }
 
 .caja_relativa 
@@ -84,30 +84,52 @@ tr
     position: relative;
     width: 300px;
     height: 200px;
+    bottom: 20px;
+    border: 10px solid blue;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    font-size: 34px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.caja_relativa_overflow 
+{
+    position: relative;
+    width: 300px;
+    height: 250px;
+    bottom: 20px;
     border: 10px solid blue;
     overflow: scroll;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    font-size: 34px;
+    border-radius: 10px;
+
 }
 
 .caja_absoluta
 {
     position: absolute;
-    width: 50px;
-    height: 35px;
+    text-align: center;
+    width: 200px;
+    height: 150px;
     border: 5px solid red;
-    top: 50px;
+    top: 20px;
     left: 50px;
-}
-#caja2
-{
-    left: 100px;
+    bottom: 20px;
+    font-family: 'Kanit', sans-serif;
+    font-size: 34px;
 }
 
 .caja_fija
 {
-    width: 50px;
-    height: 50px;
+    width: 200px;
+    height: 500px;
     position: fixed;
     top: 10px;
-    right: 10px;
+    right: 1px;
     border: 5px solid green;
+    font-family: 'Kanit', sans-serif;
+    font-size: 34px;
 }
