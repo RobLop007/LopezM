@@ -1,0 +1,55 @@
+*
+{
+    box-sizing: border-box;
+    margin: 1px;
+    padding: 1px;
+}
+
+ul
+{
+    list-style: none;
+    width: 300px;
+    height: 500px;
+}
+
+
+ul > li >ul
+{
+    display: none;
+}
+
+ul>li:hover>ul
+{
+    display: block;
+    height: 100%;
+}
+
+ul>li:hover
+{
+    list-style: none;
+}
+
+
+.opcion
+{
+    background: green;
+    color: white;
+}
+
+.sub_opcion
+{
+    padding-left: 20px;
+    background: aqua;
+    color: white;
+}
+
+.encabezados
+{
+    filter: opacity(0.8);
+    background: linear-gradient(90deg, #003fbb 0%, #0077 35%, #009ce3 100%);    
+    position: fixed;
+    right: 35vw;
+    top: 20vh;
+}
+
+
