@@ -1,3 +1,34 @@
+@import url('https://fontsrepo.com/wrold-cup-2022-free-font/');
+.mundial
+{
+    background-image: url(https://thumbs.dreamstime.com/b/de-septiembre-rusia-mosc%C3%BA-ilustraci%C3%B3n-vectorial-en-el-logotipo-fondo-la-copa-mundial-fifa-que-se-celebrar%C3%A1-qatar-copia-del-logo-231463837.jpg);
+    width: 1120px;
+    height: 530px;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.titulo-tabla
+{
+    color: white;
+    text-align: center;
+    padding-top: 13px;
+    margin: 0px;
+    font-size: 34px;
+    margin-bottom: -15px;
+}
+
+.subtitulo-tabla
+{
+    color: white;
+    text-align: center;
+    margin: 0px;
+    font-size: 24px;
+    font-family: 'Kanit', sans-serif;
+     
+}
+
 *
 {
     box-sizing: border-box;
@@ -7,11 +38,14 @@
 
 ul
 {
-    list-style: none;
     width: 300px;
-    height: 500px;
+    height: 300px;
 }
 
+li
+{
+    font-size: 25px;
+}
 
 ul > li >ul
 {
@@ -29,18 +63,28 @@ ul>li:hover
     list-style: none;
 }
 
+.logo
+{
+    width: 30px;
+    height: 30px;
+}
+
+.bandera
+{
+    width: 30px;
+}
 
 .opcion
 {
-    background: green;
+    background: #952F57;
     color: white;
 }
 
 .sub_opcion
 {
     padding-left: 20px;
-    background: aqua;
-    color: white;
+    background: white;
+    color: black;
 }
 
 .encabezados

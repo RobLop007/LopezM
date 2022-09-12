@@ -3,10 +3,12 @@
 
 .tabla-posiciones
 {
-    background-image: url(https://media.istockphoto.com/photos/blue-background-picture-id1168278976?b=1&k=20&m=1168278976&s=612x612&w=0&h=AnWfYO9Uh0PKxY34P2rVULHqSa7EEZ53B_Mh6PKrXSM=);
+    background-image: url(https://thumbs.dreamstime.com/b/de-septiembre-rusia-mosc%C3%BA-ilustraci%C3%B3n-vectorial-en-el-logotipo-fondo-la-copa-mundial-fifa-que-se-celebrar%C3%A1-qatar-copia-del-logo-231463837.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+Quagent Regular
 
 .titulo-tabla
 {
@@ -26,7 +28,6 @@
     margin: 0px;
     font-size: 24px;
     font-family: 'Kanit', sans-serif;
-     
 }
 
 .linea-tabla
