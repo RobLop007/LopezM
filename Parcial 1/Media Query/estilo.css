@@ -1,60 +1,55 @@
-*
-{
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&display=swap');
+
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    background-image: url("https://www.pinterest.com/pin/752030837770812622/");
+
+}
+.contenedor{
+   background-color: white; 
+   width: 100%;
+   height: 600px;
+   
 }
 
-.contenedor
-{
-    width: 100%;
-    height: 600px;
-    background-color: darkturquoise;    
-}
-
-.caja
-{
-    float: left;
-    border: 2px solid white;
-    width: calc((100% / 6) - 4px);
+.Personaje {
+    border: 2px solid black;
     height: 100px;
     margin: 2px;
+    width: calc((100% / 6) - 4px);
+    float: left;
     text-align: center;
+    object-fit: cover;
+    background-size:100px;
+    background-position:top;
+    background-repeat:no-repeat;
+    padding: 50px;
+    font-family: 'Kanit', sans-serif;
+    font-size: medium;
+    background-color: white;
 }
 
-@media screen and(max-width: 800px)
-{
-    #caja4
-    {
+@media screen and (min-width: 400px) and (max-width:800px){
+#Personaje {
+    clear: left;
+}
+.Personaje {
+    width: calc((100% / 3 ) - 4px);
+}
+}
+@media screen and (max-width: 399px) {
+    .Personaje{
         clear: left;
-    }
-    .caja
-    {
-        width: calc((100% / 3) - 4px);
+        width: calc(100% - 4 px);
     }
 }
-
-@media screen and (max-width: 400px) and (max-width: 800px)
-{
-    #caja4
-    {
-        clear: left;
-    }
-    .caja
-    {
-        width: calc((100% / 3) - 4px);
-    }
-}
-
-
-@media screen and(max-width: 399px)
-{
-    #caja4
-    {
-        clear: left;
-    }
-    .caja
-    {
-        width: calc(100% - 4px);
-    }
+h1{
+    font-family: 'Kanit';
+    text-align: center;
+    text-shadow: black;
+    text-decoration: red;
+    background-color: palevioletred;
+    font-family: 'Kanit';
 }
