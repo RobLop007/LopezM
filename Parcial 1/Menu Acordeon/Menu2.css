@@ -1,0 +1,63 @@
+*
+{
+    box-sizing: border-box;
+    margin: 1px;
+    padding: 1px;
+}
+
+ul
+{
+    width: 300px;
+    height: 170px;
+}
+
+li
+{
+    font-size: 25px;
+}
+
+.nav li ul li
+{
+    display: block;
+}
+
+.nav > li 
+{
+    float: left ;
+}
+
+.nav li a:hover
+{
+    background-color: white;
+    color: black;
+}
+
+.nav li ul li:hover
+{
+    background-color: #952F57;
+    color: white;
+}
+
+.logo
+{
+    width: 30px;
+    height: 30px;
+}
+
+.bandera
+{
+    width: 30px;
+}
+
+.opcion
+{
+    background: #952F57;
+    color: white;
+}
+
+.sub_opcion
+{
+    padding-left: 20px;
+    background: white;
+    color: black;
+}

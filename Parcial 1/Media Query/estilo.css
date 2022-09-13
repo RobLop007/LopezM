@@ -14,6 +14,14 @@
    
 }
 
+.foto
+{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+        
+}
+
 .Personaje {
     border: 2px solid black;
     height: 100px;
