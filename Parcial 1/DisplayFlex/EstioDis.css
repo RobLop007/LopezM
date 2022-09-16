@@ -15,12 +15,59 @@
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
+    float: left;
+}
+
+.contenedorInt
+{
+    display:flex;
+    width: 50vw;
+    height: 50vh;
+    background-color: green;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    float: left;
+}
+
+nav
+{
+    display: flex;
+    background-color: white;
+    color: black;
+    text-align: center;
+    
+}
+
+a
+{
+    display: block;
+    text-decoration: none;
+}
+
+@media screen and(max-width:800px)
+{
+    .main
+    {
+        flex-direction: column;
+    }
+    div.sideBar
+    {
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+    .contenedorInt
+    {
+        display: block;
+    }
 }
 
 .caja
 {
     /*width: 100px;*/
-    height: 100px;
+    height: 400px;
     background-color: white;
     margin: 10px;
     text-align: center;
@@ -31,6 +78,10 @@
     align-self:flex-start;
 }*/
 #caja1{flex-grow: 1;}
-#caja2{flex-grow: 2;}
-#caja3{flex-grow: 3;}
-#caja4{flex-grow: 4;}
+#caja2{flex-grow: 9;}
+
+
+.foto
+{
+    width: 100px;
+}
