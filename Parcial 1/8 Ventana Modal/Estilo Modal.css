@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&display=swap');
+*
+{
+    font-family:'Kanit';
+    text-decoration: none;
+}
+.Ventana
+{
+    font-family:'Kanit';
+    font-size: 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: silver;
+    z-index: 99999;
+    opacity: 0;
+    pointer-events: none;
+    
+}
+
+.barra
+{
+    text-align: center;
+}
+
+.Ventana:target
+{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.Ventana > div
+{
+    width: 550px;
+    position: relative;
+    margin: 5% auto;
+    padding: 10px;
+    border-radius: 10px;
+    background: white;
+    text-align: center;
+}
+.gif
+{
+    width: 525px;
+    height: 310px;
+    align-content: center;
+}
+
+.gol
+{
+    width: 600px;
+    height: 500px;
+    padding: 300px;
+}
+
+.Abrir
+{
+    color: black;
+    font-size: 24px;
+}
+
+.Cerrar
+{
+    color: black;
+    font-size: 24px;
+}
+.Abrir:hover{background:rgb(2, 131, 131);color: white;}
+.Cerrar:hover{background: rgb(2, 131, 131);color: white;}
