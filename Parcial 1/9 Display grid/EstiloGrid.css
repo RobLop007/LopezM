@@ -14,9 +14,6 @@
     display: grid;
     grid-template-columns: 10% 45% 45%;
     grid-template-rows: 20% 70% 10%;
-    grid-template-areas:'encabezado encabezado encabezado'
-                        'menuLateral columna1 columna2'
-                        'pie pie pie' ;
 
     justify-content: center;
     align-content: center;
@@ -41,39 +38,3 @@
     grid-column-end: 3;
 }
 
-/*#menuLateral
-{
-    grid-area: menuLateral;
-}
-
-#columna1
-{
-    grid-area: columna1;
-}
-
-#columna2
-{
-    grid-area: columna2;
-}
-
-#pie
-{
-    grid-area: pie;
-}*/
-
-/*
-        <div id="caja6" class="caja">Caja 6</div>
-        <div id="caja7" class="caja">Caja 7</div>
-        <div id="caja8" class="caja">Caja 8</div>
-*/
-
-/*@media screen and(maz-width:800px)
-{
-    .contenedor
-    {
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 200px 200px 200px 200px 200px;
-        grid-template-areas: ;
-    }
-}*/
