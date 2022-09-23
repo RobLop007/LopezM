@@ -12,8 +12,8 @@
     background-color: white;
 
     display: grid;
-    grid-template-columns: 150px 150px 150px;
-    grid-template-rows: 150px 150px 150px;
+    grid-template-columns: 180px 180px 180px;
+    grid-template-rows: 180px 180px 180px;
 
     justify-content: center;
     align-content: center;
@@ -36,5 +36,20 @@
 {
     grid-column-start: 1;
     grid-column-end: 3;
+    
 }
+
+.foto1
+{
+    width: 355px;
+    height: 175px;
+}
+
+.foto
+{
+    width: 175px;
+    height: 175px;
+    
+}
+
 
