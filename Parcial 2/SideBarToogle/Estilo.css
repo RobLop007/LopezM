@@ -1,0 +1,16 @@
+#opcion1:target,
+#opcion2:target,
+#opcion3:target,
+#opcion4:target{display: block;}
+
+input{display: none;}
+
+input :checked + .siderBar
+{
+    width: 0;
+}
+
+input:checked~ .content
+{
+    margin-left: 0;
+}
