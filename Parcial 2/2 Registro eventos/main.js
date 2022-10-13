@@ -1,6 +1,7 @@
+document.querySelector('Personaje 2').addEventListener("click",Saludar);
 function Saludar()
 {
-    alert("Hola, diste click");
+    alert('Hola, soy Mtatheus Doria');
 }
 
-document.querySelector
+document.getElementById('Personaje 3').onclick=function(){alert('Soy Alan Cervantes')}

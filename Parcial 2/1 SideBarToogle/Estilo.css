@@ -1,9 +1,17 @@
 #opcion1:target,
 #opcion2:target,
 #opcion3:target,
-#opcion4:target{display: block;}
+#opcion4:target{display: flex;}
 
-input{display: none;}
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*input{display: none;}
 
 input :checked + .siderBar
 {
@@ -13,4 +21,78 @@ input :checked + .siderBar
 input:checked~ .content
 {
     margin-left: 0;
+}*/
+
+.cont
+{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
 }
+div.sideBar
+{
+ /* width: 250px; */
+ height: 100%;
+ flex-grow: 1;
+ background-color: black;
+ color: white;
+ text-align: center;
+ /* flex-grow: 1; */
+ /* overflow: auto; */
+}
+.sideBar a
+{
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+}
+.sideBar a:hover 
+{
+    color: green;
+    background-color: white;
+}
+
+div.content
+{
+    /* width: calc(100% - 300px); */
+    background-color: green;
+    padding: 1px 16px;
+    height: 100%;
+    flex-grow: 4;/* Deja que crezca este elemento 4 veces mas que los demas elementos */
+}
+
+@media screen and (max-width:1200px){
+    .contenedor
+    {
+       flex-direction: row;
+    }
+}
+@media screen and (max-width:599px) {
+    .contenedor
+    {
+     display:flex;
+     flex-direction: column;   
+    }
+    .sideBar
+    {
+        flex-direction: row;
+        height: auto;
+    }
+    .content
+    {
+        flex-direction: column;
+    }
+}
+@media screen and(max-width:449px) {
+    
+}
+input[type="checkbox"]{/*z-index: 999;*/ top: 0;left: 0;}
+    input[type="checkbox"]:checked + .sideBar{
+        /* width: 0; */
+        display: none;
+    }
+    input[type="checkbox"]:checked ~ .content{
+        margin-left: 0px;
+    }
