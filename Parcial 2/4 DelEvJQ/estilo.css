@@ -9,7 +9,6 @@
     height: 100vh;
     grid-template-columns: 200px 200px 200px;
     grid-template-rows: 200px 200px 200px;
-    background-color: blue;
     justify-content: center; /*Justificamos la caja padre al centro*/
     align-items: stretch; /*Alineacion de los items(hijos) de manera estrecha*/
     align-content: center;
@@ -17,18 +16,19 @@
     grid-auto-flow: column; /*Hacia donde se van a ir haciendo las cajitas, como de tipo columna(de arriba a abajo) o de tipo row(izquierda a derecha) */
   }
   .caja {
-    background-color: aqua;
-    color: blue;
+    background-color: white;
+    color: black;
     /* margin: 10px;
       height: 100px;
       width: 100px; */
     text-align: center;
-    border: 2px solid black;
+    border: 1px solid rgb(84, 84, 84);
   }
-  #caja1 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    /* background-color: rgb(232, 45, 45); */
+  .foto
+  {
+    width: 175px;
+    height: 175px;
+    text-align: center;
   }
   /* #caja2,
   #caja6,
