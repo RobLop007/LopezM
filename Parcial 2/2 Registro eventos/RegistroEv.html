@@ -11,18 +11,29 @@
     <div class="contenedor">
         <h1>|SELECCIONA A TU JUGADOR FAVORITO|</h1>
     
-        <div id="Personaje 1"class="Personaje" onclick="alert('Hola, soy Carlos Acevedo')" style="background-image: url(https://ttassets.azureedge.net/ttsocial/07122204815_carlos-acevedo2.png) ;">
+        <div id="Personaje1"class="Personaje" onclick="alert('Hola, soy Carlos Acevedo')" style="background-image: url(https://ttassets.azureedge.net/ttsocial/07122204815_carlos-acevedo2.png) ;">
             <strong>Acevedo</strong>
         </div>
-        <div id="Personaje 2"class="Personaje" onclick="Saludar()" style="background-image: url(https://ttassets.azureedge.net/ttsocial/07121334875_matheus-doria.png);">
+        <div id="Personaje2"class="Personaje" onclick="Saludar()" style="background-image: url(https://ttassets.azureedge.net/ttsocial/07121334875_matheus-doria.png);">
             <strong>Doria</strong>
         </div>
-        <div id="Personaje 3"class="Personaje" style="background-image: url(https://ttassets.azureedge.net/ttsocial/07135924448_alan-cervantes.png);">
+        <div id="Personaje3"class="Personaje"  style="background-image: url(https://ttassets.azureedge.net/ttsocial/07135924448_alan-cervantes.png);">
             <strong>Cervantes</strong>
         </div>        
     </div>
 
-<script src="main.js"></script>
+<script>
+    document.querySelector('#Personaje2').addEventListener("click",Saludar);
+function Saludar()
+{
+    alert('Hola, soy Mtatheus Doria');
+}
+
+document.getElementById('Personaje3').onclick=function()
+{
+    alert('Hola, soy Alan Cervantes');
+}
+</script>
 
 </body>
 </html>

@@ -4,4 +4,4 @@ function Saludar()
     alert('Hola, soy Mtatheus Doria');
 }
 
-document.getElementById('Personaje 3').onclick=function(){alert('Soy Alan Cervantes')}
+document.getElementById('Personaje 3').onclick=function(){alert('Hola, soy Alan Cervantes')}
