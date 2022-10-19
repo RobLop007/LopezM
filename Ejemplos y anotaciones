@@ -27,3 +27,15 @@ Instalar apps de documentacion de lenguajes ej:
 zeal
 dndocs.io
 velocity
+
+function saludar(nombre)
+{
+    console.log('Hola ${nombre}.')
+}
+saludar('Roberto')
+
+
+var sal1 = function mifuncion(nombre)
+{
+    console.log()
+}
