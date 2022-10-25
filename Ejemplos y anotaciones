@@ -15,12 +15,12 @@ none:
 hidden: 
 
 <style>
-        table{border: 2px solid blue color silver;}
-        td:active {background-color:blue;color: white;}
-        tbody>tr:nth-of-type(odd){background-color: lightgray;}
-        thead>tr{background-color: blue;color: white;} 
-        tbody>tr:hover{background-color:  white;}
-    </style>
+    table{border: 2px solid blue color silver;}
+    td:active {background-color:blue;color: white;}
+    tbody>tr:nth-of-type(odd){background-color: lightgray;}
+    thead>tr{background-color: blue;color: white;} 
+    tbody>tr:hover{background-color:  white;}
+</style>
 
 
 Instalar apps de documentacion de lenguajes ej:
