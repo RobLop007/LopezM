@@ -13,7 +13,7 @@ window.onload=function()
                 document.getElementById("myDiv").innerHTML=solicitud.responseText;
             }
         };
-        solicitud.open("GET", "carga.js", true);
+        solicitud.open("GET", "carga.txt", true);
         solicitud.send();    
     }
     function iniciarHeader()
