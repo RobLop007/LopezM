@@ -10,7 +10,7 @@
 <body>
     <button id="btnPet">Peticion Fetch</button>
     <button id="btnPetQuery">Peticion Query</button>
-    <button id="btnPetFetchAsyncAwait">Peticion Query</button>
+    <button id="btnPetFetchAsyncAwait">Peticion Async Await</button>
     <div id="caja"></div>
 
     <script>
@@ -23,13 +23,18 @@
 
         })
 
-        document.getElementById("btnPetFetchAsyncAwait").addEventListener("click", )
+        document.getElementById("btnPetFetchAsyncAwait").addEventListener("click", async function()
+        {
+            let respuesta = await fetch("https://api.chucknorris.io/jokes/random");
+            let datoJson = await respuesta.json();
+            document.getElementById("caja").innerHTML=datoJson.value;
+        })
         
         document.getElementById("btnPetQuery").addEventListener("click", function()
         {
             $.getJSON("https://api.chucknorris.io/jokes/random", function(datoJs)
             {
-                document.getElementById("caja").innerText=datoJs.value
+                document.getElementById("caja").innerText=datoJs.value;
             })
         })
 
