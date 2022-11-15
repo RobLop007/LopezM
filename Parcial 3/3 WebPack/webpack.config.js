@@ -3,7 +3,7 @@ const path = requiere('path');
 module.exports={
     entry: './src/index.js',
     output : {
-        filename: 'bundle.js',
+        filename: './src/bundle.js',
         path: path.resolve(__dirname,'dist')
     }
 }
