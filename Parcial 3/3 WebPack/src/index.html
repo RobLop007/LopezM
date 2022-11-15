@@ -4,12 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulario</title>
+
+
 </head>
 <body>
-    <h1>Hello webpack</h1>
-    <button id="sw">Disparar alerta</button>+
 
+
+    <div class="row">
+        <div class="form-group col-sm-12 col-md-6">
+            <label for="ApPatEmpleado" class="form-label">Apellido Paterno</label>
+            <input type="text" class="form-control" id="ApPatEmpleado">
+        </div>
+        <div class="form-group col-sm-12 col-md-6">
+            <label for="ApMatEmpleado" class="form-label">Apellido Materno</label>
+            <input type="text" class="form-control" id="ApMatEmpleado">
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="form-group col-sm-12 sol-md-6 col-lg-4">
+            <label for="rfcEmpleado" class="form-label">RFC</label>
+            <input type="text" class="form-control" id="rfcEmpleado" aria-describedby="emailHelp">
+        </div>
+        <div class="form-group col-sm-12 sol-md-6 col-lg-4">
+            <label for="curpEmpleado" class="form-label">CURP</label>
+            <input type="text" class="form-control" id="curpEmpleado">
+        </div>
+        <div class="form-group col-sm-12 sol-md-6 col-lg-4">
+            <label for="emailEmpleado" class="form-label">e-Mail</label>
+            <input type="text" class="form-control" id="emailEmpleado">
+        </div>
+    </div>
     <script src="./module.js"></script>
 </body>
 </html>
