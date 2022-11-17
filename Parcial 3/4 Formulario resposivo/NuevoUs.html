@@ -5,25 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
 </head>
 <body>
-    <div class="contenedor">
+    <div class="contenedor">        
         <form class="row">
+            <!-- Nombre -->
             <div class="form-group col-sm-12 col-md-6">
                 <label for="nombres" class="form-label">Nombre(s)</label>
                 <input type="text" class="form-control" id="nombres" placeholder="Nombre(s)">
             </div>
-
+            <!-- Apellidos -->
             <div class="form-group col-sm-12 col-md-6">
-                <label for="apellidos" class="form-label">Apellido(s)</label>
-                <input type="text" class="form-control" id="apellidos" placeholder="Apellido">
+                <label for="apellidos" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="apellido" placeholder="Apellido">                
             </div>
 
-            <div class="form-group col-sm-12 col-md-6 col-lg-4">
-                <label for="Contraseña" class="form-label">Contraseña</label>
-                <input type="text" class="form-control" id="Contraseña" placeholder="Contraseña">
+            <!-- Correo -->
+            <div class="form-group col-sm-12">
+                <label for="mail" class="form-label">Correo electronico</label>
+                <input type="text" class="form-control" id="mail" placeholder="ejemplo@hotmail.com">                
             </div>
-            <button id="btnGetReg" type="button">Generar registro</button>
+
+            <!-- Contraseña -->
+            <div class="form-group col-sm-12 col-md-6">
+                <label for="contraseña" class="form-label">Contraseña</label>
+                <input type="text" class="form-control" id="contraseña" placeholder="Contraseña">
+                <label for="contraseñaVal" class="form-label">Validar Contraseña</label>
+                <input type="text" class="form-control" id="contraseñaVal" placeholder="Contraseña">
+            </div>      
+            
+            <button id="btnGenReg" type="button">Generar registro</button>
         </form>
     </div>
 
