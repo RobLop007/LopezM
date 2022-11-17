@@ -11,9 +11,10 @@
 
 </head>
 <body>
-    <section class=" d-flex justify-content-center align-items-center">
+    <section class="d-flex justify-content-center align-items-center">
         <div class="card mt-3 col-sm-12 col-md-6 col-lg-5">
-            <form class="row">
+            <form class="row my-3">
+                <h3 class="display-5 text-primary text-center">Registro</h3>
                 <div class="mb-2 form-group col-sm-12 col-md-6">
                     <label for="nombres" class="form-label">Nombre(s)</label>
                     <input type="text" class="form-control" id="nombres" placeholder="Nombre(s)">
@@ -22,26 +23,50 @@
                     <label for="apellidos" class="form-label">Apellido(s)</label>
                     <input type="text" class="form-control" id="apellidos" placeholder="Apellido">
                 </div>
-                <div class="form-group col-sm-12">
+                <div class="mb-3 text-center form-group col-sm-12 col-md-6">
                     <label for="mail" class="form-label">Correo electronico</label>
                     <input type="text" class="form-control" id="mail" placeholder="ejemplo@hotmmail.com">
                 </div>
-                <div class="form-group col-sm-12 col-md-8">
-                    <label for="id" class="form-label">Crear un nuevo ID</label>
-                    <input type="text" class="form-control" id="id" placeholder="ejemplo@hotmmail.com">
+                <div class="mb-3 text-center form-group col-sm-12 col-md-6">
+                    <label for="telefono" class="form-label">Telefono</label>
+                    <input type="text" class="form-control" id="telefono" placeholder="867-***-***">
                 </div>
-                <div class="form-group col-sm-12 col-md-6">
+                <div>
+                    <label for="fechaNac" class="form-label">Fecha de nacimieinto</label>
+                    <select class="input-gruop date" name="fechaNac" id="nacimiento"></select>
+                </div>
+                <div class="mb-3 form-group col-sm-12 col-md-6">
+                    <label for="id" class="form-label">Crear un nuevo ID</label>
+                    <input type="text" class="form-control" id="id" placeholder="Usuario123">
+                </div>
+                <div class="mb-3 form-group col-sm-12 col-md-6">
+                    <label for="genero" class="form-label">Genero</label>
+                    <select class="custom-select mr-sm-2" name="genero" id="genero" >
+                        <option selected>Elegir genero</option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Femenito">Femenino</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                </div>                
+                <div class="mb-3 form-group col-sm-12 col-md-6">
                     <label for="Contraseña" class="form-label">Contraseña</label>
                     <input type="text" class="form-control" id="Contraseña" placeholder="Contraseña">
                 </div>
-                <div class="form-group col-sm-12 col-md-6">
+                <div class="mb-3 form-group col-sm-12 col-md-6">
                     <label for="contrseñaVer" class="form-label">Verificar Contraseña</label>
                     <input type="text" class="form-control" id="contrseñaVer" placeholder="Contraseña">
                 </div>
-                <button id="btnGetReg" type="button">Generar registro</button>
+                
             </form>
+            
+            <div class="d-flex justify-content-center align-items-center">
+                <button type="button" class="btn btn-outline-success btn-sm mb-2 ms-1 me-2">Registrar</button>
+
+                <button type="button" class="btn btn-outline-danger btn-sm mb-2 ms-1 me-2">Cancelar</button>
+            </div>
+
         </div>
     </section>
-    
+
 </body>
 </html>
