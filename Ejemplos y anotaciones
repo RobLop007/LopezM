@@ -39,3 +39,5 @@ var sal1 = function mifuncion(nombre)
 {
     console.log()
 }
+
+ cuadrado = (valor)=> {return valor*valor};
