@@ -3,11 +3,17 @@ document.getElementById("btnGenReg").addEventListener("click",async()=>{
     let dato = await respuesta.json();
     document.getElementById("nombres").value=dato.nombres
     document.getElementById("apellido").value=dato.apellido
-    document.getElementById("mail").value=dato.nombres
-    document.getElementById("contraseña").value=dato.apellido
-    document.getElementById("contraseñaVal").value=dato.apellido
+    document.getElementById("mail").value=dato.mail
+    document.getElementById("telefono").value=dato.telefono
+    document.getElementById("fechaNac").value=dato.fechaNac
+    document.getElementById("genero").value=dato.genero
+    document.getElementById("id").value=dato.id
+    document.getElementById("contraseña").value=dato.contraseña    
+    document.getElementById("contraseñaVer").value=dato.contraseñaVer
     
 });
+
+
 
 
 /*document.getElementById("btnGetReg").addEventListener("click",function(){
