@@ -22,5 +22,7 @@
     }
 
     echo $mysqli->host_info . "\n";
+
+    
 ?>
 
