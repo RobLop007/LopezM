@@ -1,19 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Inicio de sesion</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="..." alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
+    <section class="d-flex justify-content-center align-items-center">
+      <div class="card mt-3 col-sm-12 col-md-5">
+        <form class="row my-3">
+          <h5 class="text-primary text-center">Iniciar sesion</h5>
+          <!-- Uusario -->
+          <div class="form-group col-sm-12 col-md-11">
+            <label for="usuarioLogin" class="ms-3 form-label" >ID o correo electronico</label>
+            <input type="text" class="ms-3 form-control" id="usuarioLogin" placeholder="ID O correo electrpnico">
+          </div>
+          <!-- Contraseña -->
+          <div class="form-group col-sm-12 col-md-11">
+            <label for="usuarioLogin" class="ms-3 form-label" >ID o correo electronico</label>
+            <input type="text" class="ms-3 form-control" id="usuarioLogin" placeholder="ID O correo electrpnico">
+          </div>
+        </form>
       </div>
+    </section>
 </body>
 </html>
