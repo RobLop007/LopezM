@@ -1,6 +1,6 @@
-document.getElementById("btnGenReg").addEventListener("click",async()=>{
-    let respuesta = await fetch('my.php');
-    let dato = await respuesta.json();
+    document.getElementById("btnGenReg").addEventListener("click",async()=>{
+    let registro = await fetch('my.php');
+    let dato = await registro.json();
     document.getElementById("nombres").value=dato.nombres
     document.getElementById("apellido").value=dato.apellido
     document.getElementById("mail").value=dato.mail
@@ -11,6 +11,10 @@ document.getElementById("btnGenReg").addEventListener("click",async()=>{
     document.getElementById("contraseña").value=dato.contraseña    
     document.getElementById("contraseñaVer").value=dato.contraseñaVer
     
+    function displayCampos(registro){
+        document.getElementById("nombres").value=regregistro.nombres
+        document.getElementById("apellido").value=registro.apellido       
+    }
 });
 
 

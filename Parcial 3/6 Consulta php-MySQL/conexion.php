@@ -1,15 +1,19 @@
 <?php
-    $registro['nombres'] = "Roberto";
-    $registro['apellido'] = "López";
-    $registro['mail'] = "rjlom001@gmail.com";
-    $registro['telefono'] = "8672445834";
-    $registro['fechaNac'] = "18/10/2000";
-    $registro['genero'] = "Masculino";
-    $registro['id'] = "19100207";
-    $registro['contraseña'] = "1234";
-    $registro['contraseñaVal'] = "1234";
-    echo json_encode($registro);
+    
+    $servidor = "localhost";
+    $usuario = "root";
+    $password = "1234567";
+    $db = "Northwind";
 
+    $con = mysqli_conect($servidor,$usuario,$password,$db) or die("Problemas en la conexion a la base de datos");        
+    $consulta = "select * from categories";
+    $registros = mysqli_query($con,$consulta) or die("Problemas en el select");
+
+    $result = mysqli_fetch_all($registros);
+    mysqli_close($con);
+    echo json_encode($result);
+
+    
     $mysqli = new mysqli("localhost", "usuario", "contraseña", "basedatos");
     if ($mysqli->connect_errno) {
         echo "Fallo al conectar a MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
@@ -23,6 +27,4 @@
 
     echo $mysqli->host_info . "\n";
 
-    
 ?>
-
