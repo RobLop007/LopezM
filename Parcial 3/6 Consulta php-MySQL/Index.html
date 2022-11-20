@@ -12,11 +12,11 @@
 </head>
 <body>
     <div class="mt-2 container d-flex justify-content-center align-items-center">
-        <div class="row g-0 py-3 d-flex gap-2 border col-md-12 col-lg-8 justify-content-center align-items-center formulario">
+        <div method="POST" action="./guardar.php" class="row g-0 py-3 d-flex gap-2 border col-md-12 col-lg-8 justify-content-center align-items-center formulario">
             <div class="row">
                 <h1 class="text-primary text-center">Registrate</h1>
             </div>
-            <!-- Nombre -->
+            <!-- Nombres -->
             <div class="form-group col-sm-12 col-md-5">
                 <label for="nombre" class="form-label">Nombre</label>
                 <input type="text" class="form-control" id="nombre" placeholder="Nombre">
@@ -28,8 +28,8 @@
             </div>            
             <!-- Correo -->
             <div class="form-group col-sm-12 col-md-5">
-                <label for="mail" class="form-label">Correo electronico</label>
-                <input type="email" class="form-control" id="mail" placeholder="nombre@ejemplo.com">
+                <label for="correo" class="form-label">Correo electronico</label>
+                <input type="email" class="form-control" id="correo" placeholder="nombre@ejemplo.com">
             </div>
             <!-- Telefono -->
             <div class="form-group col-sm-12 col-md-5">
@@ -60,18 +60,18 @@
             </div>                    
             <!-- Contraseñas -->
             <div class="form-group col-sm-12 col-md-5">
-                <label for="Contraseña" class="form-label">Contraseña</label>
-                <input type="password" class="form-control" id="Contraseña" placeholder="Contraseña">
+                <label for="contraseña" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="contraseña" placeholder="Contraseña">
                 <span id="LargoContra1" class="form-text">De 8-20 caracteres de largo.</span>
             </div>
             <div class="form-group col-sm-12 col-md-5">
-                <label for="contrseñaVer" class="form-label">Repetir contraseña</label>
-                <input type="password" class=" form-control" id="contrseñaVer" placeholder="Contraseña">
+                <label for="contraseña" class="form-label">Repetir contraseña</label>
+                <input type="password" class=" form-control" id="contraseña" placeholder="Contraseña">
                 <span id="LargoContra2" class="form-text">De 8-20 caracteres de largo.</span>
             </div>
             <!-- Botones -->
             <div class="d-flex justify-content-center align-items-center">
-                <button id="btnGenReg" type="button" class="btn btn-outline-success btn-sm mb-2 ms-1 me-2">Registrar</button>
+                <button id="btnGenReg" type="submit" class="btn btn-outline-success btn-sm mb-2 ms-1 me-2">Registrar</button>
                 <button id="btnCancela" type="button" class="btn btn-outline-danger btn-sm mb-2 ms-1 me-2">Cancelar</button>
             </div>            
         </div>
