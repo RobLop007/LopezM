@@ -5,8 +5,7 @@
     $password = "";
     $db = "proyect_web";
 
-    $con = mysqli_conect($servidor,$usuario,$password,$db) or die("Problemas en la conexion a la base de datos");        
-    
+    $con = mysqli_conect($servidor,$usuario,$password,$db);
     
     /*$consulta = "select * from categories";
     $registros = mysqli_query($con,$consulta) or die("Problemas en el select");
