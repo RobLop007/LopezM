@@ -1,26 +1,15 @@
 <?php
 
-    require "./conexion.php";
+    $registro["nombre"] = "Roberto";
+    $registro["apellido"] = "López";
+    $registro["correo"] = "rjlom001@gmail.com";
+    $registro["telefono"] = "8672445834";
+    $registro["fechaNac"] = "2000-10-18";
+    $registro["genero"] = "Masculino";
+    $registro["id"] = "RobLop007";
+    $registro["contraseña"] = "1234";
+    $registro["contraseñaVal"] = "1234";
 
-    $nombres = $_POST["#nombres"];
-    $apellido = $_POST["#apellido"];
-    $correo = $_POST["#correo"];
-    $telefono = $_POST["#telefono"];
-    $fecha = $_POST["#fechaNac"];
-    $genero = $_POST["#genero"];
-    $id = $_POST["#id"];
-    $contraseña = $_POST["#contraseña"];
-
-    $insert = "INSERT INTO usuario values ('$nombres', '$apellido', '$correo', '$telefono', '$fecha', '$genero', '$id', '$contraseña')";
-
-    $query = mysqli_query($con, $insert);
-
-    if($query){
-
-        echo "correcto";
-    } else {
-        echo "incorrecto";
-    }
-
+    echo json_encode($registro);
 
 ?>
