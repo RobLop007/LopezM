@@ -1,13 +1,13 @@
 <?php
     
     $servidor = "localhost";
-    $basedatos = "Northwind";
+    $basedatos = "proyect_web";
     $usuario = "root";
-    $password = "";
+    $password = "1234567";
 
-    $con = mysqli_conect($servidor,$usuario,$password,$basedatos) or die("Problemas al conectar con el servidor");
+    $con = mysqli_connect($servidor,$usuario,$password,$basedatos) or die("Problemas al conectar con el servidor");
 
-    $consulta = "select * from categories";
+    $consulta = "select * from usuario";
     $registros = mysqli_query($con,$consulta) or die("Problemas en el select");
 
     $result = mysqli_fetch_all($registros);
