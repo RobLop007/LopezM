@@ -36,7 +36,8 @@ $(document).ready(function () {
   });
     
   $("#btnInsertar").click(function(){
-    console.log("El elemento a INSERTAR es ".Insertar);
+    let Insertar = document.getElementById("nombre").value;
+    
     let nombre = document.getElementById("nombre").value;
     let apellido = document.getElementById("apellido").value;
     let correo = document.getElementById("correo").value;
