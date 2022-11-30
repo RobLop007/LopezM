@@ -1,9 +1,9 @@
 <?php
     
     $servidor = "localhost";
-    $basedatos = "northwind";
+    $basedatos = "proyect_web";
     $usuario = "root";
-    $password = "";
+    $password = "1234567";
 
     $con = mysqli_connect($servidor,$usuario,$password,$basedatos) or die("Problemas al conectar con el servidor");
     $consulta = "select * from usuario";
