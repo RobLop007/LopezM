@@ -3,7 +3,7 @@ $(document).ready(function () {
     const settings = {
       async: true,
       crossDomain: true,
-      url: "http://localhost/LopezM/Proyecto/busqueda/conexion.php",
+      url: "http://localhost/LopezM/Parcial%203/7%20Grid/conexion.php",
       method: "GET",
       headers: {
         Acept: "/",
