@@ -1,3 +1,9 @@
+<?php
+include("conexion.php");
+$consulta = "select * from usuario";
+$query = mysqli_query($con ,$consulta);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,12 +19,9 @@
     <script src="jquery-3.6.1.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.3/jsgrid.min.js"></script>
 </head>
-<body>
-
-    <div id="jsGrid"></div>
-    
+<body>    
     <div class="mt-2 container d-flex justify-content-center align-items-center">
-        <div class="row g-0 py-3 d-flex gap-2 border col-md-12 col-lg-8 justify-content-center align-items-center formulario">            
+        <form class="row g-0 py-3 d-flex gap-2 border col-md-12 col-lg-8 justify-content-center align-items-center formulario">            
             <!-- Nombres -->
             <div class="form-group col-sm-12 col-md-5">
                 <label for="nombre" class="form-label">Nombre</label>
@@ -33,34 +36,7 @@
             <div class="form-group col-sm-12 col-md-5">
                 <label for="correo" class="form-label">Correo electronico</label>
                 <input type="email" class="form-control" id="correo" placeholder="nombre@ejemplo.com">
-            </div>
-            <!-- Telefono -->
-            <div class="form-group col-sm-12 col-md-5">
-                <label for="telefono" class="form-label">Telefono</label>
-                <input type="tel" class="form-control" id="telefono" placeholder="867-***-***">
-            </div>
-            <!-- Fecha -->
-            <div class="form-group col-sm-12 col-md-5">
-                <label for="fechaNac" class="ms-3 form-label">Fecha de nacimieinto</label>
-                <input class="ms-3 " type="date" id="fechaNac" name="trip-start"
-                value="2022-11-22"
-                min="1900-01-01" max="2020-12-31">
-            </div>
-            <!-- Genero -->
-            <div class="form-group col-sm-12 col-md-5">
-                <label for="genero" class="form-label">Genero</label>
-                <select class="custom-select mr-sm-2" name="genero" id="genero" >
-                    <option selected>Elegir genero</option>
-                    <option value="Masculino">Masculino</option>
-                    <option value="Femenito">Femenino</option>
-                    <option value="Otro">Otro</option>
-                </select>
-            </div>    
-            <!-- ID -->
-            <div class="align-items-center text-center form-group col-sm-12 col-md-5">
-                <label for="id" class="form-label">Crear un nuevo ID</label>
-                <input type="text" class="form-control" id="id" placeholder="Usuario123">
-            </div>                    
+            </div>           
             <!-- Contraseñas -->
             <div class="form-group col-sm-12 col-md-5">
                 <label for="contraseña" class="form-label">Contraseña</label>
@@ -68,14 +44,36 @@
             </div>    
             <!-- Botones -->
             <div class="d-flex justify-content-center align-items-center">
-                <button id="btnInsertar" type="submit" class="btn btn-outline-success btn-sm mb-2 ms-1 me-2">Insertar</button>
-                <button id="btnBuscar" type="submit" class="btn btn-outline-success btn-sm mb-2 ms-1 me-2">Buscar</button>
-                <button id="btnModificar" type="submit" class="btn btn-outline-primary btn-sm mb-2 ms-1 me-2">Modificar</button>
-                <button id="btnEliminar" type="button" class="btn btn-outline-danger btn-sm mb-2 ms-1 me-2">Eliminar</button>
+                <button id="btnInsertar" type="submit" class="btn btn-outline-success btn-sm mb-2 ms-1 me-2">Insertar</button>                
             </div>            
-        </div>
+        </form>
     </div>   
-    
-    <script src="index.js"></script>
+    <div class="container">
+        <table class="table">
+            <thead>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Correo</th>
+                <th>Contraseña</th>
+            </thead>
+            <tbody>
+                <?php 
+                while($row = mysqli_fetch_array($query)):
+                ?>
+                <tr>
+                <td><?=$row['Id'] ?></td>
+                <td><?=$row['Nombre'] ?></td>
+                <td><?=$row['Apellido'] ?></td>
+                <td><?=$row['Correo'] ?></td>
+                <td><?=$row['Clave'] ?></td>
+                </tr>
+                <?php 
+                endwhile;
+                ?>
+            </tbody>
+        </table>
+    </div>
+
 </body>
 </html>
