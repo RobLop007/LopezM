@@ -1,5 +1,4 @@
-<?php
-    
+<?php    
     $servidor = "localhost";
     $basedatos = "proyect_web";
     $usuario = "root";
@@ -12,7 +11,5 @@
 
     $result = mysqli_fetch_all($registros,MYSQLI_ASSOC);
     mysqli_close($con);
-    echo json_encode($result);
-
-    
+    echo json_encode($result);    
 ?>

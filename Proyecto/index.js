@@ -3,7 +3,7 @@ $(document).ready(function () {
   const settings = {
     async: true,
     crossDomain: true,
-    url: "http://localhost/LopezM/Proyecto/busqueda/conexion.php",
+    url: "http://localhost/LopezM/Proyecto/conexion.php",
     method: "GET",
     headers: {
       Acept: "/",
@@ -34,7 +34,10 @@ $(document).ready(function () {
       ],
     });
   });
-    
+
+
+
+ /*   
   $("#btnInsertar").click(function(){
     let Insertar = document.getElementById("nombre").value;
     
@@ -66,6 +69,6 @@ $(document).ready(function () {
     },"json");
     }
     
-  });
+  });*/
 
 });
